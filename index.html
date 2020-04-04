@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDCursos</title>
+    <link rel="stylesheet" href="https://ux.ed.team/css/styles.css?201803301710">
+</head>
+
+<body>
+    <div class="ed-grid">
+        <h1>EDCursos</h1>
+        <form id="formCursos">
+            <div class="ed-grid m-grid-4">
+                <div class="form-item">
+                    <label>
+                        Name
+                        <input type="text" name="nombreCurso" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Poster
+                        <input type="text" name="posterCurso" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Class
+                        <input type="number" min="1" name="clasesCurso" required>
+                    </label>
+                </div>
+                <div class="form-item m-py-3">
+                    <label>                        
+                        <input class="button " type="submit" name="crearCurso" value="Crear Curso">
+                    </label>
+                </div>
+            </div>
+        </form>
+        <h1>Teacher</h1>
+        <form id="formProfesores">
+            <div class="ed-grid m-grid-4">
+                <div class="form-item">
+                    <label>
+                        Name(s)
+                        <input type="text" name="nombreProfesor" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        LastName
+                        <input type="text" name="apellidosProfesor" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Email
+                        <input type="text" name="correoProfesor" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Courses
+                        <input type="text" name="cursosProfesor" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Score
+                        <input type="number" min="1" max="10" name="calificacionProfesor" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        State
+                        <input type="text" name="estadoProfesor" required>
+                    </label>
+                </div>
+                <div class="form-item m-py-3">
+                    <label>                
+                        <input type="submit" class="button" value="Agregar Profesor" >
+                    </label>
+                </div>
+            </div>
+        </form>
+        <h1>Student</h1>
+        <form id="formAlumnos">
+            <div class="ed-grid m-grid-4">
+                <div class="form-item">
+                    <label>
+                        Name
+                        <input type="text" name="nombreAlumno" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        LastName
+                        <input type="text" name="apellidosAlumno" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Email
+                        <input type="text" name="correoAlumno" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Courses Taken
+                        <input type="text" name="cursosAlumno" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        State
+                        <input type="text" name="estadoAlumno" required>
+                    </label>
+                </div>
+                <div class="form-item m-py-3">
+                    <label>                
+                        <input type="submit" class="button" value="Agregar Profesor" >
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="ed-grid m-grid-4 s-grid-2 row-gap" id="cursos"></div>
+    <div class="ed-grid" id="teachers"></div>
+    <script type="module" src="./scripts/index.js"></script>
+</body>
+
+</html>
